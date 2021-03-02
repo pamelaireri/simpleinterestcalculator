@@ -1,13 +1,14 @@
 function compute()
 {
-   
+   //Getting principal input and validating
     var principal = document.getElementById("principal").value;
-    if (principal <= 0) {
+    if (principal <= 0 ) {
         alert("Enter positive number");
         document.getElementById("principal").focus();
 
         
       }
+    
     else{
     
     var rate = document.getElementById("rate").value;
@@ -32,7 +33,6 @@ function compute()
 }
 
 //Creating function to display value of slider oninput.
-
 function rangeVal()
 {
      
