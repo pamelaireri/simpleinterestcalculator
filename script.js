@@ -2,6 +2,13 @@ function compute()
 {
    
     var principal = document.getElementById("principal").value;
+    if (principal <= 0) {
+        alert("Enter positive number");
+        document.getElementById("principal").focus();
+
+        
+      }
+    else{
     
     var rate = document.getElementById("rate").value;
     //document.getElementById("rangeVal").innerHTML = rate;
@@ -20,6 +27,7 @@ function compute()
 
     //displaying result
     document.getElementById("result").innerHTML = text;
+    }
 
 }
 
